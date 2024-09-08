@@ -1,0 +1,7 @@
+.textContainer {
+    display: -webkit-box; /* Necessary for line clamping */
+    -webkit-line-clamp: 2; /* Set the maximum number of lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
