@@ -1,12 +1,10 @@
-import React from 'react';
+import { useState, useEffect } from 'react'
+import { useParams } from 'react-router-dom'
+import { apiService } from '../../services/apiService'
+import { ItemDetail } from '../ItemDetail/ItemDetail'
+import { Container } from 'react-bootstrap'
 
-import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
-import { apiService } from '../../services/apiService'; 
-import { ItemDetail } from '../ItemDetail/ItemDetail';
-import { Container } from 'react-bootstrap';
-
-export function ItemDetailContainer() {
+export const ItemDetailContainer = () => {
     const [product, setProduct] = useState(null);
     const { id } = useParams();
     const [loading, setLoading] = useState(true);

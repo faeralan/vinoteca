@@ -1,10 +1,8 @@
-import React from 'react'
-
-import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
-import { apiService } from '../../services/apiService';
-import { ItemList } from '../ItemList/ItemList';
-import { Container } from 'react-bootstrap';
+import { useState, useEffect } from 'react'
+import { useParams } from 'react-router-dom'
+import { apiService } from '../../services/apiService'
+import { ItemList } from '../ItemList/ItemList'
+import { Container } from 'react-bootstrap'
 
 export const ItemListContainer = () => {
   const [products, setProducts] = useState([]);

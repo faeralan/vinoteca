@@ -1,7 +1,7 @@
 import React from 'react'
-import { Container, Row, Col, Image } from 'react-bootstrap';
-import styles from './ItemDetail.module.css';
-import { ItemCount } from '../ItemCount/ItemCount';
+import { Container, Row, Col, Image } from 'react-bootstrap'
+import styles from './ItemDetail.module.css'
+import { ItemCount } from '../ItemCount/ItemCount'
 
 export const ItemDetail = ({item}) => {
 
